@@ -49,3 +49,119 @@ select,button{width:100%;font-size:17px;padding:13px;border-radius:14px;border:1
 button{border:none;background:#0b55d9;color:white;font-weight:bold;cursor:pointer}#phrase{font-size:27px;color:#1d4ed8;margin:8px 0}#translation,.hint{color:#667085}
 .progress{height:15px;background:#e5e7eb;border-radius:999px;overflow:hidden}#progressFill{height:100%;width:0;background:#22c55e;transition:width .3s}
 @media(max-width:900px){.topbar,.main-grid{display:block}.scorebox,.panel{margin-top:16px}.classroom{height:560px}.board{left:140px;width:260px}.desk{left:50px;right:50px}.speech{font-size:18px;left:50%;top:14px}.teacher{transform:translateX(-50%) scale(.9);top:150px}}
+
+
+/* v7 — poprawka widoczności postaci na telefonie i tablecie */
+.classroom {
+  min-height: 635px;
+}
+
+.teacher {
+  z-index: 20;
+}
+
+.head,
+.body,
+.arm,
+.neck,
+.paper,
+.hair-back {
+  filter: brightness(1.08);
+}
+
+.speech {
+  z-index: 40;
+}
+
+/* mocniejsze kolory, żeby postać była lepiej widoczna */
+.head {
+  background: #ffd9ad;
+}
+
+.hair-back,
+.hair-front,
+.hair-front:before {
+  background: #6f3528;
+}
+
+.jacket {
+  background: #8358c8;
+}
+
+.shirt {
+  background: #ff6b5c;
+}
+
+@media (max-width: 900px) {
+  .classroom {
+    height: 620px;
+    min-height: 620px;
+    overflow: hidden;
+  }
+
+  .teacher {
+    top: 155px;
+    left: 50%;
+    transform: translateX(-50%) scale(1.03);
+  }
+
+  .board {
+    left: 105px;
+    top: 35px;
+    width: 260px;
+    height: 135px;
+    font-size: 23px;
+    padding-top: 38px;
+  }
+
+  .desk {
+    left: 22px;
+    right: 22px;
+    bottom: 62px;
+    height: 115px;
+  }
+
+  .speech {
+    top: 12px;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    width: 86%;
+    text-align: center;
+    font-size: 18px;
+    padding: 12px 16px;
+  }
+
+  .shelf,
+  .plant,
+  .globe,
+  .books {
+    opacity: 0.65;
+  }
+}
+
+@media (max-width: 520px) {
+  .classroom {
+    height: 600px;
+    min-height: 600px;
+  }
+
+  .teacher {
+    top: 165px;
+    transform: translateX(-50%) scale(0.95);
+  }
+
+  .board {
+    left: 70px;
+    width: 220px;
+    opacity: 0.95;
+  }
+
+  .desk {
+    bottom: 55px;
+  }
+
+  .topbar h1 {
+    font-size: 24px;
+  }
+}

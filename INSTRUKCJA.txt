@@ -1,16 +1,23 @@
-ANNA KLASA TABLICA v6
+ANNA KLASA TABLICA v7 — POPRAWKA WIDOCZNOŚCI POSTACI
 
-Postać jest zrobiona w stylu obrazka: nauczycielka w klasie przy biurku, tablica, książki, globus.
-Głos jest ustawiony jak w pierwszym kodzie, który Pani najbardziej odpowiadał.
+Ta wersja poprawia problem, gdy postać była niewidoczna albo za mało widoczna na telefonie.
+
+Zmiany:
+- postać jest jaśniejsza,
+- postać jest wyżej i bardziej na środku,
+- poprawiony widok mobilny,
+- poprawiony z-index, żeby postać nie chowała się za innymi elementami,
+- głos zostaje jak w pierwszej wersji.
 
 Jak podmienić na GitHub:
 1. Rozpakować ZIP.
-2. Wejść na repozytorium nauka-niemieckiego-.
+2. Na GitHub wejść do repozytorium nauka-niemieckiego-.
 3. Kliknąć + → Upload files.
 4. Wgrać i podmienić:
    index.html
    style.css
    script.js
    INSTRUKCJA.txt
-5. Commit changes.
+5. Kliknąć Commit changes.
 6. Poczekać 1–3 minuty.
+7. Odświeżyć stronę.
