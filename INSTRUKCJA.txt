@@ -1,19 +1,25 @@
-ANNA — MÓWIĄCA NAUCZYCIELKA NIEMIECKIEGO
+ANNA 2D — MÓWIĄCA NAUCZYCIELKA NIEMIECKIEGO
+
+To jest wersja do używania, nie tylko obraz.
 
 Jak uruchomić:
-1. Rozpakować ZIP.
-2. Otworzyć index.html w Google Chrome albo Microsoft Edge.
-3. Kliknąć Start lekcji.
-4. Kliknąć Mów teraz i pozwolić na użycie mikrofonu.
+1. Rozpakować plik ZIP.
+2. Otworzyć plik index.html w Google Chrome albo Microsoft Edge.
+3. Kliknąć „Start lekcji”.
+4. Anna mówi po niemiecku, porusza ustami i lekko głową.
+5. Kliknąć „Mów teraz” i powiedzieć zdanie do mikrofonu.
 
 Co działa:
-- ładna postać nauczycielki,
+- animowana nauczycielka 2D,
+- mruganie oczami,
+- delikatny ruch głowy podczas mówienia,
+- poruszanie ustami podczas mówienia,
 - niemiecki głos z przeglądarki,
 - mikrofon i rozpoznawanie niemieckiej mowy,
-- sprawdzanie podobieństwa odpowiedzi,
+- sprawdzanie odpowiedzi,
 - punkty, odznaki i poziomy A1/A2/B1,
-- lekcje: przedstawianie się, rodzina, zakupy, hotel/Hausdame.
+- lekcje codzienne i hotelowe.
 
 Uwaga:
-To jest wersja bez płatnego API i bez prawdziwej AI.
-Odpowiedzi są sprawdzane według przygotowanych zdań.
+To nie jest prawdziwa AI. To prosta aplikacja ze scenariuszami.
+Nie trzeba płacić za API.

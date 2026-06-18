@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anna 2D — mówiąca nauczycielka niemieckiego</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div>
+        <h1>Anna 2D — mówiąca nauczycielka niemieckiego</h1>
+        <p>Animowana twarz 2D · głos niemiecki · mikrofon · punkty · lekcje A1/A2</p>
+      </div>
+      <div class="scorebox">
+        ⭐ Punkty: <strong id="points">0</strong><br>
+        🏆 Odznaki: <strong id="badges">0</strong><br>
+        📘 Poziom: <strong id="level">A1</strong>
+      </div>
+    </header>
+
+    <section class="main-grid">
+      <section class="teacher-area">
+        <div class="teacher" id="teacher">
+          <div class="hair back-hair"></div>
+          <div class="neck"></div>
+          <div class="body">
+            <div class="collar left"></div>
+            <div class="collar right"></div>
+          </div>
+
+          <div class="head">
+            <div class="hair fringe-1"></div>
+            <div class="hair fringe-2"></div>
+            <div class="hair fringe-3"></div>
+
+            <div class="eyebrow left"></div>
+            <div class="eyebrow right"></div>
+
+            <div class="eye left">
+              <div class="pupil"></div>
+            </div>
+            <div class="eye right">
+              <div class="pupil"></div>
+            </div>
+
+            <div class="nose"></div>
+            <div class="cheek left"></div>
+            <div class="cheek right"></div>
+
+            <div class="mouth" id="mouth">
+              <div class="teeth"></div>
+            </div>
+          </div>
+
+          <div class="speech" id="speechBubble">
+            Hallo! Ich bin Anna. Kliknij Start lekcji.
+          </div>
+        </div>
+
+        <div class="answer-card">
+          <p class="label">Program usłyszał:</p>
+          <p id="heardText">—</p>
+          <p class="feedback" id="result">Kliknij „Start lekcji”.</p>
+        </div>
+      </section>
+
+      <aside class="control-panel">
+        <section class="box">
+          <h2>Lekcja</h2>
+          <label for="lessonSelect">Wybierz temat:</label>
+          <select id="lessonSelect"></select>
+
+          <p class="label">Anna mówi:</p>
+          <h3 id="phrase">Ich heiße Anna.</h3>
+          <p id="translation">Nazywam się Anna.</p>
+
+          <div class="buttons">
+            <button id="startBtn">▶ Start lekcji</button>
+            <button id="speakBtn">🔊 Powtórz głos</button>
+            <button id="listenBtn">🎤 Mów teraz</button>
+            <button id="nextBtn">➡ Następne zdanie</button>
+          </div>
+        </section>
+
+        <section class="box">
+          <h2>Postęp</h2>
+          <div class="progress"><div id="progressFill"></div></div>
+          <p id="progressText">Poziom A1</p>
+        </section>
+
+        <section class="box">
+          <h2>Quiz głosowy</h2>
+          <button id="quizBtn">Anna zadaje pytanie</button>
+          <p id="quizQuestion">—</p>
+          <p class="hint" id="quizHint"></p>
+        </section>
+
+        <section class="box small">
+          <h2>Uwaga</h2>
+          <p>Mikrofon działa najlepiej w Chrome albo Edge. Przy pierwszym użyciu trzeba pozwolić stronie używać mikrofonu.</p>
+        </section>
+      </aside>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
