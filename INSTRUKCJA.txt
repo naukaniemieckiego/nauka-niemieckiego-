@@ -1,29 +1,11 @@
-ANNA PREMIUM DELUXE v5
+INSTRUKCJA
 
-Zmiany:
-- ciemne, rozpuszczone włosy,
-- blond pasemka,
-- okulary,
-- delikatny makijaż,
-- bardziej elegancki wygląd,
-- mruganie,
-- ruch głowy,
-- płynne ruchy ust,
-- uśmiech przy dobrej odpowiedzi,
-- głos ustawiony bardziej jak w poprzedniej wersji.
+1. Rozpakować plik ZIP.
+2. Otworzyć plik index.html w Chrome albo Edge.
+3. Kliknąć „Start lekcji”.
+4. Kliknąć „Mów teraz” i pozwolić przeglądarce użyć mikrofonu.
 
-Jak podmienić na GitHub:
-1. Rozpakować ZIP.
-2. Wejść na repozytorium GitHub: nauka-niemieckiego-
-3. Kliknąć + → Upload files.
-4. Wgrać i podmienić:
-   index.html
-   style.css
-   script.js
-   INSTRUKCJA.txt
-5. Kliknąć Commit changes.
-6. Odczekać 1–3 minuty.
-7. Otworzyć:
-   https://naukaniemieckiego.github.io/nauka-niemieckiego-/
-
-Nie trzeba wgrywać anna_nauczycielka.png.
+Uwaga:
+- Mikrofon najlepiej działa w Chrome / Edge.
+- Na niektórych telefonach rozpoznawanie głosu może działać gorzej.
+- To jest wersja bez płatnego API i bez prawdziwej AI.

@@ -3,73 +3,71 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Anna Premium Deluxe</title>
+  <title>Mówiący Nauczyciel Niemieckiego A1/A2</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<main class="app">
-  <header class="topbar">
-    <div>
-      <h1>Anna Premium Deluxe — nauczycielka niemieckiego</h1>
-      <p>Okulary · ciemne włosy z blond pasemkami · makijaż · animowane usta · naturalniejszy głos</p>
-    </div>
-    <div class="scorebox">⭐ Punkty: <b id="points">0</b><br>🏆 Odznaki: <b id="badges">0</b><br>📘 Poziom: <b id="level">A1</b></div>
-  </header>
-
-  <section class="main-grid">
-    <section class="teacher-area">
-      <div class="stage">
-        <div class="teacher" id="teacher">
-          <div class="glow"></div>
-          <div class="hair-back"></div><div class="hair-side left"></div><div class="hair-side right"></div>
-          <div class="neck"></div>
-          <div class="body"><div class="shirt"></div><div class="necklace"></div></div>
-          <div class="head">
-            <div class="bang b1"></div><div class="bang b2"></div><div class="bang b3"></div>
-            <div class="brow left"></div><div class="brow right"></div>
-            <div class="eye left"><div class="iris"></div><div class="shine"></div></div>
-            <div class="eye right"><div class="iris"></div><div class="shine"></div></div>
-            <div class="glasses g-left"></div><div class="glasses g-right"></div><div class="glasses-bridge"></div>
-            <div class="nose"></div>
-            <div class="cheek left"></div><div class="cheek right"></div>
-            <div class="mouth"><div class="lip"></div><div class="teeth"></div><div class="tongue"></div></div>
-          </div>
-          <div class="speech" id="speechBubble">Hallo! Ich bin Anna.</div>
+  <main class="app">
+    <section class="card hero">
+      <div class="avatar" id="avatar">
+        <div class="face">
+          <div class="eyes">● ●</div>
+          <div class="mouth" id="mouth"></div>
         </div>
+        <p>Nauczycielka</p>
       </div>
-      <div class="answer-card">
-        <p class="label">Program usłyszał:</p>
-        <p id="heardText">—</p>
-        <p class="feedback" id="result">Kliknij „Start lekcji”.</p>
+
+      <div class="lesson">
+        <h1>Mówiący nauczyciel niemieckiego</h1>
+        <p class="small">Poziom: <strong id="level">A1</strong> · Punkty: <strong id="points">0</strong> · Odznaki: <strong id="badges">0</strong></p>
+
+        <label for="lessonSelect">Wybierz lekcję:</label>
+        <select id="lessonSelect"></select>
+
+        <div class="phrase-box">
+          <p class="label">Powtórz po niemiecku:</p>
+          <h2 id="phrase">Kliknij „Start lekcji”</h2>
+          <p id="translation"></p>
+        </div>
+
+        <div class="buttons">
+          <button id="startBtn">Start lekcji</button>
+          <button id="speakBtn">Powtórz głos</button>
+          <button id="listenBtn">🎤 Mów teraz</button>
+          <button id="nextBtn">Następne zdanie</button>
+        </div>
+
+        <div class="result" id="result">Tutaj pojawi się wynik wymowy.</div>
+
+        <div class="heard">
+          <p class="label">Program usłyszał:</p>
+          <p id="heardText">—</p>
+        </div>
       </div>
     </section>
 
-    <aside class="panel">
-      <section class="box">
-        <h2>Lekcja</h2>
-        <label for="lessonSelect">Wybierz temat:</label>
-        <select id="lessonSelect"></select>
-        <p class="label">Anna mówi:</p>
-        <h3 id="phrase">Ich heiße Anna.</h3>
-        <p id="translation">Nazywam się Anna.</p>
-        <button id="startBtn">▶ Start lekcji</button>
-        <button id="speakBtn">🔊 Powtórz głos</button>
-        <button id="listenBtn">🎤 Mów teraz</button>
-        <button id="nextBtn">➡ Następne zdanie</button>
-      </section>
-      <section class="box">
-        <h2>Postęp</h2>
-        <div class="progress"><div id="progressFill"></div></div>
-        <p id="progressText">Poziom A1</p>
-      </section>
-      <section class="box">
-        <h2>Quiz głosowy</h2>
-        <button id="quizBtn">Anna zadaje pytanie</button>
-        <p id="quizQuestion">—</p><p class="hint" id="quizHint"></p>
-      </section>
-    </aside>
-  </section>
-</main>
-<script src="script.js"></script>
+    <section class="card">
+      <h2>Quiz głosowy</h2>
+      <p>Program pyta, Pani odpowiada pełnym zdaniem.</p>
+      <button id="quizBtn">Zadaj pytanie</button>
+      <p id="quizQuestion"></p>
+      <p id="quizHint"></p>
+    </section>
+
+    <section class="card">
+      <h2>Jak dodać własną lekcję?</h2>
+      <p>Otworzyć plik <strong>script.js</strong> i dopisać nowe zdania w części <strong>lessons</strong>.</p>
+      <pre>
+{
+  name: "Hotel",
+  items: [
+    { de: "Das Zimmer ist fertig.", pl: "Pokój jest gotowy." }
+  ]
+}
+      </pre>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
