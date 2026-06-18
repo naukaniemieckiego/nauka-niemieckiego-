@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deutsch Lernen Bot</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background: #f0f2f5; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .chat-container { width: 400px; background: white; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); padding: 20px; text-align: center; }
+        #status { color: #666; margin-bottom: 20px; font-style: italic; }
+        .btn { background: #28a745; color: white; border: none; padding: 12px 24px; font-size: 16px; border-radius: 30px; cursor: pointer; transition: background 0.2s; }
+        .btn:hover { background: #218838; }
+        #output { margin-top: 20px; text-align: left; max-height: 200px; overflow-y: auto; border-top: 1px solid #eee; padding-top: 10px; }
+    </style>
+</head>
+<body>
+
+<div class="chat-container">
+    <h2>Deutsch Lernen Bot 🇩🇪</h2>
+    <p id="status">Klicke na przycisk i zacznij mówić po niemiecku...</p>
+    <button class="btn" id="start-btn">Mikrofon einschalten</button>
+    <div id="output"></div>
+</div>
+
+<script>
+    const startBtn = document.getElementById('start-btn');
+    const statusText = document.getElementById('status');
+    const outputDiv = document.getElementById('output');
+
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    
+    if (!SpeechRecognition) {
+        statusText.innerText = "Twoja przeglądarka nie wspiera rozpoznawania mowy. Użyj Chrome lub Edge.";
+        startBtn.disabled = true;
+    } else {
+        const recognition = new SpeechRecognition();
+        recognition.lang = 'de-DE'; // Słuchanie po niemiecku
+        recognition.interimResults = false;
+
+        function powiedz(tekst) {
+            const tekstDoPowiedzenia = new SpeechSynthesisUtterance(tekst);
+            tekstDoPowiedzenia.lang = 'de-DE'; // Mówienie po niemiecku
+            window.speechSynthesis.speak(tekstDoPowiedzenia);
+            dodajLog("Bot", tekst);
+        }
+
+        startBtn.addEventListener('click', () => {
+            recognition.start();
+            statusText.innerText = "Ich höre zu... (Słucham...)";
+            startBtn.disabled = true;
+        });
+
+        recognition.onresult = (event) => {
+            const wynik = event.results[0][0].transcript;
+            dodajLog("Du", wynik);
+            odpowiedzBot(wynik.toLowerCase());
+        };
+
+        recognition.onend = () => {
+            statusText.innerText = "Klicke na przycisk i zacznij mówić...";
+            startBtn.disabled = false;
+        };
+
+        function odpowiedzBot(wypowiedz) {
+            if (wypowiedz.includes("hallo") || wypowiedz.includes("guten tag")) {
+                powiedz("Hallo! Wie kann ich dir heute helfen?");
+            } else if (wypowiedz.includes("wie geht es dir") || wypowiedz.includes("wie geht's")) {
+                powiedz("Mir geht es sehr gut, danke! Und wie geht es dir?");
+            } else if (wypowiedz.includes("wie heißt du") || wypowiedz.includes("wer bist du")) {
+                powiedz("Ich bin dein KI-Bot zum Deutschlernen.");
+            } else if (wypowiedz.includes("gut") || wypowiedz.includes("super")) {
+                powiedz("Das freut mich zu hören!");
+            } else {
+                powiedz("Das ist interessant, aber ich habe dich nicht ganz verstanden. Kannst du das anders sagen?");
+            }
+        }
+
+        function dodajLog(kto, tekst) {
+            const p = document.createElement('p');
+            p.innerHTML = `<strong>${kto}:</strong> ${tekst}`;
+            outputDiv.appendChild(p);
+            outputDiv.scrollTop = outputDiv.scrollHeight;
+        }
+    }
+</script>
+
+</body>
+</html>
