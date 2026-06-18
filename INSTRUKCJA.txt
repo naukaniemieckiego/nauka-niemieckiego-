@@ -1,0 +1,19 @@
+ANNA — MÓWIĄCA NAUCZYCIELKA NIEMIECKIEGO
+
+Jak uruchomić:
+1. Rozpakować ZIP.
+2. Otworzyć index.html w Google Chrome albo Microsoft Edge.
+3. Kliknąć Start lekcji.
+4. Kliknąć Mów teraz i pozwolić na użycie mikrofonu.
+
+Co działa:
+- ładna postać nauczycielki,
+- niemiecki głos z przeglądarki,
+- mikrofon i rozpoznawanie niemieckiej mowy,
+- sprawdzanie podobieństwa odpowiedzi,
+- punkty, odznaki i poziomy A1/A2/B1,
+- lekcje: przedstawianie się, rodzina, zakupy, hotel/Hausdame.
+
+Uwaga:
+To jest wersja bez płatnego API i bez prawdziwej AI.
+Odpowiedzi są sprawdzane według przygotowanych zdań.
