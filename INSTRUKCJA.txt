@@ -1,0 +1,11 @@
+INSTRUKCJA
+
+1. Rozpakować plik ZIP.
+2. Otworzyć plik index.html w Chrome albo Edge.
+3. Kliknąć „Start lekcji”.
+4. Kliknąć „Mów teraz” i pozwolić przeglądarce użyć mikrofonu.
+
+Uwaga:
+- Mikrofon najlepiej działa w Chrome / Edge.
+- Na niektórych telefonach rozpoznawanie głosu może działać gorzej.
+- To jest wersja bez płatnego API i bez prawdziwej AI.
