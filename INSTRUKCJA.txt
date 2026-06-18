@@ -1,25 +1,17 @@
-ANNA 2D — MÓWIĄCA NAUCZYCIELKA NIEMIECKIEGO
+ANNA PREMIUM 2D
 
-To jest wersja do używania, nie tylko obraz.
+Jak dołączyć do Pani strony GitHub:
+1. Rozpakować ZIP.
+2. Na GitHub wejść do repozytorium nauka-niemieckiego-.
+3. Kliknąć + → Upload files.
+4. Wgrać i podmienić 4 pliki:
+   index.html
+   style.css
+   script.js
+   INSTRUKCJA.txt
+5. Kliknąć Commit changes.
+6. Odczekać 1–3 minuty.
+7. Otworzyć:
+   https://naukaniemieckiego.github.io/nauka-niemieckiego-/
 
-Jak uruchomić:
-1. Rozpakować plik ZIP.
-2. Otworzyć plik index.html w Google Chrome albo Microsoft Edge.
-3. Kliknąć „Start lekcji”.
-4. Anna mówi po niemiecku, porusza ustami i lekko głową.
-5. Kliknąć „Mów teraz” i powiedzieć zdanie do mikrofonu.
-
-Co działa:
-- animowana nauczycielka 2D,
-- mruganie oczami,
-- delikatny ruch głowy podczas mówienia,
-- poruszanie ustami podczas mówienia,
-- niemiecki głos z przeglądarki,
-- mikrofon i rozpoznawanie niemieckiej mowy,
-- sprawdzanie odpowiedzi,
-- punkty, odznaki i poziomy A1/A2/B1,
-- lekcje codzienne i hotelowe.
-
-Uwaga:
-To nie jest prawdziwa AI. To prosta aplikacja ze scenariuszami.
-Nie trzeba płacić za API.
+Nie trzeba wgrywać anna_nauczycielka.png.
