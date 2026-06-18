@@ -1,10 +1,22 @@
-ANNA PREMIUM 2D
+ANNA PREMIUM DELUXE v5
 
-Jak dołączyć do Pani strony GitHub:
+Zmiany:
+- ciemne, rozpuszczone włosy,
+- blond pasemka,
+- okulary,
+- delikatny makijaż,
+- bardziej elegancki wygląd,
+- mruganie,
+- ruch głowy,
+- płynne ruchy ust,
+- uśmiech przy dobrej odpowiedzi,
+- głos ustawiony bardziej jak w poprzedniej wersji.
+
+Jak podmienić na GitHub:
 1. Rozpakować ZIP.
-2. Na GitHub wejść do repozytorium nauka-niemieckiego-.
+2. Wejść na repozytorium GitHub: nauka-niemieckiego-
 3. Kliknąć + → Upload files.
-4. Wgrać i podmienić 4 pliki:
+4. Wgrać i podmienić:
    index.html
    style.css
    script.js
